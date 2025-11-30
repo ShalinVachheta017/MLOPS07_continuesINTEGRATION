@@ -4,7 +4,7 @@
 
 name: CI workflow
 
-# Triggers for the workflow
+# Triggers for the workflow (github actions ne kahiye chie ahiya k..)
 # The workflow will run on:
 # - Pushes to the main branch
 # - Pull requests targeting the main branch
@@ -18,7 +18,7 @@ on:
 
 # Define the jobs to run
 jobs:
-    # Job name: test
+    # Job name: test (can be anything)
     # This job runs the test suite on an Ubuntu runner
     test:
         runs-on: ubuntu-latest
@@ -48,4 +48,4 @@ jobs:
             # Execute pytest on the test file _test.py to run the test suite
             - name: Run tests
               run: |
-                  pytest _test.py
+                  pytest test.py
