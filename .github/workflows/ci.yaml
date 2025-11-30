@@ -44,8 +44,12 @@ jobs:
                   python -m pip install --upgrade pip
                   pip install pytest streamlit
 
+            # Debug step to list files
+            - name: Debug - List files
+              run: ls -R
+
             # Step 4: Run the tests
-            # Execute pytest on the test file _test.py to run the test suite
+            # Execute pytest on the test file test_app.py to run the test suite
             - name: Run tests
               run: |
-                  pytest _test.py
+                  pytest test_app.py
