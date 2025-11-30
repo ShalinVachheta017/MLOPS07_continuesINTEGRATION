@@ -48,4 +48,4 @@ jobs:
             # Execute pytest on the test file _test.py to run the test suite
             - name: Run tests
               run: |
-                  pytest test.py
+                  pytest _test.py
